@@ -1,16 +1,11 @@
 from game import State
 from pv_mcts import pv_mcts_action
-# from tensorflow.keras.models import model_from_json
 from tensorflow.keras.models import load_model
 from pathlib import Path
 from threading import Thread
 import tkinter as tk
 
 model = load_model('./model/best.h5')
-# with open('./model/model_config.json') as json_file:
-#     json_config = json_file.read()
-# model = model_from_json(json_config)
-# model.load_weights('./model/best_weights_only.h5')
 
 
 class GameUI(tk.Frame):
