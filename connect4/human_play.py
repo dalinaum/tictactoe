@@ -76,6 +76,6 @@ class GameUI(tk.Frame):
                 self.draw_piece(i, not self.state.is_first_player())
 
 
-f = GameUI(mode=model)
+f = GameUI(model=model)
 f.pack()
 f.mainloop()
